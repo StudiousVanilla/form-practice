@@ -1,0 +1,409 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+    background-color: #eceef1;
+    font-family: 'Helvetica'
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    
+    display: flex;
+    justify-content: flex-end;
+
+
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.sign-in-container{
+    width: 291px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-in-text{
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sign-in-text a{
+    color: rgb(0, 119, 197);
+    text-decoration: none;
+}
+
+.sign-in-button-holder{
+    
+}
+
+.sign-in-button-holder a{
+    text-decoration: none;
+}
+
+.sign-in-button{
+    width: 101px;
+    height: 34px;
+
+    color: white;
+    background-color: rgb(0, 119, 197);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 20px;
+
+    font-size: 13.5px;
+
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 4px;
+}
+
+.sign-in-button i{
+    font-size: 13.5px;
+    
+}
+
+.brand-name{
+  width: 100%;
+  height: 75px;
+
+  padding: 20px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-name img{
+  margin-right: 5px;
+}
+
+.app-services{
+  width: 100%;
+  height: 42px;
+
+  padding-bottom: 4px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-names{
+  display: flex;
+  font-weight: 100;
+}
+
+.app-names a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-name{
+  margin-right: 9px;
+  font-size: 18px;
+}
+
+.app-names i{
+  vertical-align: top;
+  margin-right: 4px;
+  font-size: 27px;
+}
+
+.mint{
+  color: rgb(18, 168, 206);;
+}
+
+.quick{
+  color: rgb(3, 150, 3);
+}
+
+.turbo{
+  color: rgb(192, 3, 3);
+}
+
+.sign-up{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
+}
+
+.sign-up-form{
+  width: 378px;
+  height: 659px;
+  padding: 30px 30px 0px 30px;
+  background-color: white;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title{
+  font-weight: 100;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-info{
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.learn-more{
+  font-weight: 100;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.form-div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+label{
+  font-size: 13.5px;
+  font-weight: 100;
+  margin-bottom: 6px;
+}
+
+input{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#phone-num{
+  margin-bottom: 6px;
+}
+
+.phone-rates{
+  width: 100%;
+  text-align: left;
+  font-weight: 100;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+#password{
+  margin-bottom: 40px;
+}
+
+.create-button{
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0077c5;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.button-content{
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.button-content i{
+  font-size: 17px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.form-terms-container{
+  width: 90%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: rgb(75, 75, 75);
+}
+
+.form-terms a{
+  text-decoration: none;
+  color: #0077c5;
+}
+
+.captcha-container{
+  width: 376px;
+  height: 32px;
+  padding: 28px 0px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECEEF1;
+}
+
+.captcha{
+  font-size: 10px;
+  font-weight: 100;
+  color: rgb(75, 75, 75);
+}
+
+.captcha a{
+  text-decoration: none;
+  color: #0077c5;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;  
+}
+
+.footer-content{
+  width: 90%;
+  height: 99px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0px;
+
+  font-size: 11.5px;
+  font-weight: 100;
+  text-align: center;
+
+}
+
+.footer-links{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 3px;
+}
+
+.copyright{
+  width: 100%;
+}
+
+aside{
+  width: 122px;
+  height: 41px;
+  bottom: 0px;
+  position: fixed;
+  right:5%;
+  font-size: 13.5px;
+  font-weight: 100;
+  background-color: rgb(107, 108, 114);
+  border-radius: 4px;
+}
+
+aside a{
+  text-decoration: none;
+  color: white;
+}
+
+.privacy{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
